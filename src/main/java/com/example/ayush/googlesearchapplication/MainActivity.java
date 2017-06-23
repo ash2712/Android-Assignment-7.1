@@ -16,13 +16,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final EditText et1 = (EditText) findViewById(R.id.editext);
-        Button bt1 = (Button) findViewById(R.id.button);
+        Button bt1 = (Button) findViewById(R.id.button);//Decleration
+        
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
-                String term = et1.getText().toString();
-                intent.putExtra(SearchManager.QUERY, term);
+                String term = et1.getText().toString();//gets input from user
+                intent.putExtra(SearchManager.QUERY, term);//searches the input in whichever search engine is selected
                 startActivity(intent);
             }
         });
