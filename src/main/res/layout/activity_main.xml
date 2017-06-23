@@ -15,16 +15,15 @@
         android:gravity="center"
         />
 
-    <EditText
+    <EditText//to get info from user
         android:id="@+id/editext"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:layout_marginRight="8dp"
         android:inputType="text"
         />
-    <Button
+    <Button//to search the user input on being clicked
         android:id="@+id/button"
-
         android:text="Search"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
